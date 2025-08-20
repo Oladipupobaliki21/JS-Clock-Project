@@ -10,16 +10,13 @@ body{
     align-items: center;
 }
 .clock{
-    width: 60vw;
-    height: 60vw;
+    width: 30rem;
+    height: 30rem;
     border: 20px solid white;
     border-radius: 50%;
-    border-width: 4vw;
     margin: 50px auto;
-    max-width: 22rem;
-    max-height: 22rem;
     position: relative;
-    padding: 6vw;
+    padding: 2rem;
 }
 .clock-face{
     position: relative;
@@ -29,9 +26,8 @@ body{
   
 }
 .hand{
-    width: 45%;
-    height: 1vw;
-    min-height: 4px;
+    width: 50%;
+    height: 6px;
     background-color: black;
     position: absolute;
     top: 50%;
@@ -39,19 +35,4 @@ body{
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
-/* Media Query for small screens */
-@media (max-width: 600px) {
-    .clock {
-        width: 90vw;
-        height: 90vw;
-        max-width: 22rem;
-        max-height: 22rem;
-        border-width: 6vw;
-        padding: 6vw;
-    }
-    .hand {
-        height: 2vw;
-        min-height: 2px;
-    }
 }
